@@ -314,7 +314,7 @@ public class Console implements ConsoleBasicActions, ConsoleManagerActions, Cons
             System.out.println("You didn't rent a car!");
         } else {
             System.out.println("Your rented car:\n" +
-                    carDao.getCar(carDBId) +
+                    carDao.getCarName(carDBId) +
                     "\nCompany:\n" +
                     companyDao.getCompanyName(companyId)
             );

@@ -59,6 +59,7 @@ public class CarDaoImpl implements CarDao {
         }
     }
 
+    @Override
     public void getCarList(int company_id) {
 
         Connection conn = null;
@@ -103,7 +104,7 @@ public class CarDaoImpl implements CarDao {
         }
     }
 
-
+    @Override
     public void addCar(String car, int company_id) {
         Connection conn = null;
         Statement stmt = null;
@@ -142,7 +143,8 @@ public class CarDaoImpl implements CarDao {
 
     }
 
-    public String getCar(int carId) {
+    @Override
+    public String getCarName(int carId) {
         Connection conn = null;
         Statement stmt = null;
         String result = null;
@@ -183,6 +185,7 @@ public class CarDaoImpl implements CarDao {
                 se.printStackTrace();
             }
         }
+
         return result;
 
     }
