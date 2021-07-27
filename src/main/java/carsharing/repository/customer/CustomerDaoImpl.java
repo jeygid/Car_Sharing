@@ -9,7 +9,7 @@ import java.util.List;
 public class CustomerDaoImpl implements CustomerDao {
 
     static final String JDBC_DRIVER = "org.h2.Driver";
-    static final String DB_URL = "jdbc:h2:~/IdeaProjects/CarSharing/src/main/resources/db";
+    static final String DB_URL = "jdbc:h2:./src/main/resources/db";
 
     static final String USER = "sa";
     static final String PASS = "";
